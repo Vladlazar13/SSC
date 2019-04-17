@@ -1,0 +1,3 @@
+﻿  Float Matrix Multiplication.cpp
+c:\users\vlad lazar\source\repos\float matrix multiplication\float matrix multiplication\float matrix multiplication.cpp(111): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+  Float Matrix Multiplication.vcxproj -> C:\Users\Vlad Lazar\source\repos\Float Matrix Multiplication\Debug\Float Matrix Multiplication.exe

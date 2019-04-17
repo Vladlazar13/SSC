@@ -1,0 +1,92 @@
+Min element: 1.17549e-38  Max element: 3.40282e+38
+
+DIMENSION: 500
+
+Dimension 500 Test: 1 Total seconds : 0.592319
+Dimension 500 Test: 2 Total seconds : 0.526024
+Dimension 500 Test: 3 Total seconds : 0.525501
+Dimension 500 Test: 4 Total seconds : 0.495679
+Dimension 500 Test: 5 Total seconds : 0.492048
+Dimension 500 Test: 6 Total seconds : 0.503407
+Dimension 500 Test: 7 Total seconds : 0.492449
+Dimension 500 Test: 8 Total seconds : 0.496209
+Dimension 500 Test: 9 Total seconds : 0.49985
+Dimension 500 Test: 10 Total seconds : 0.49726
+
+
+
+DIMENSION: 600
+
+Dimension 600 Test: 1 Total seconds : 0.94414
+Dimension 600 Test: 2 Total seconds : 0.887341
+Dimension 600 Test: 3 Total seconds : 0.949947
+Dimension 600 Test: 4 Total seconds : 0.94836
+Dimension 600 Test: 5 Total seconds : 0.934385
+Dimension 600 Test: 6 Total seconds : 0.938818
+Dimension 600 Test: 7 Total seconds : 0.98468
+Dimension 600 Test: 8 Total seconds : 0.906745
+Dimension 600 Test: 9 Total seconds : 0.875045
+Dimension 600 Test: 10 Total seconds : 0.966583
+
+
+
+DIMENSION: 700
+
+Dimension 700 Test: 1 Total seconds : 1.49656
+Dimension 700 Test: 2 Total seconds : 1.72213
+Dimension 700 Test: 3 Total seconds : 1.79509
+Dimension 700 Test: 4 Total seconds : 1.72222
+Dimension 700 Test: 5 Total seconds : 1.7575
+Dimension 700 Test: 6 Total seconds : 1.7413
+Dimension 700 Test: 7 Total seconds : 1.73754
+Dimension 700 Test: 8 Total seconds : 1.74447
+Dimension 700 Test: 9 Total seconds : 1.8987
+Dimension 700 Test: 10 Total seconds : 1.73926
+
+
+
+DIMENSION: 800
+
+Dimension 800 Test: 1 Total seconds : 3.05553
+Dimension 800 Test: 2 Total seconds : 3.06881
+Dimension 800 Test: 3 Total seconds : 2.98322
+Dimension 800 Test: 4 Total seconds : 3.03246
+Dimension 800 Test: 5 Total seconds : 3.00919
+Dimension 800 Test: 6 Total seconds : 3.01348
+Dimension 800 Test: 7 Total seconds : 3.13586
+Dimension 800 Test: 8 Total seconds : 3.06385
+Dimension 800 Test: 9 Total seconds : 3.05229
+Dimension 800 Test: 10 Total seconds : 3.02686
+
+
+
+DIMENSION: 900
+
+Dimension 900 Test: 1 Total seconds : 5.29062
+Dimension 900 Test: 2 Total seconds : 4.98819
+Dimension 900 Test: 3 Total seconds : 5.0712
+Dimension 900 Test: 4 Total seconds : 5.17867
+Dimension 900 Test: 5 Total seconds : 5.14399
+Dimension 900 Test: 6 Total seconds : 5.39428
+Dimension 900 Test: 7 Total seconds : 5.35655
+Dimension 900 Test: 8 Total seconds : 5.30689
+Dimension 900 Test: 9 Total seconds : 5.17267
+Dimension 900 Test: 10 Total seconds : 4.87794
+
+
+
+DIMENSION: 1000
+
+Dimension 1000 Test: 1 Total seconds : 8.39382
+Dimension 1000 Test: 2 Total seconds : 8.23085
+Dimension 1000 Test: 3 Total seconds : 8.30003
+Dimension 1000 Test: 4 Total seconds : 8.23796
+Dimension 1000 Test: 5 Total seconds : 8.17646
+Dimension 1000 Test: 6 Total seconds : 8.20721
+Dimension 1000 Test: 7 Total seconds : 8.22146
+Dimension 1000 Test: 8 Total seconds : 8.09605
+Dimension 1000 Test: 9 Total seconds : 8.21838
+Dimension 1000 Test: 10 Total seconds : 8.20765
+
+
+

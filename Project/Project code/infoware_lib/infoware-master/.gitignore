@@ -1,0 +1,17 @@
+*
+!src
+!src/**
+!examples
+!examples/**
+!include
+!include/**
+!.git*
+!.clang-format
+!.travis.yml
+!appveyor.yml
+!*Makefile
+!LICENSE
+!README.md
+!*.sln
+!*.vcxproj
+!*.vcxproj.filter

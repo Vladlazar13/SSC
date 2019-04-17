@@ -1,0 +1,5 @@
+﻿  ConsoleApplication2.cpp
+d:\faculty\an3\semestrul 2\structure of computer systems\scs lab 1\consoleapplication2\consoleapplication2\consoleapplication2.cpp(88): warning C4018: '<': signed/unsigned mismatch
+d:\faculty\an3\semestrul 2\structure of computer systems\scs lab 1\consoleapplication2\consoleapplication2\consoleapplication2.cpp(37): warning C4101: 'mult': unreferenced local variable
+d:\faculty\an3\semestrul 2\structure of computer systems\scs lab 1\consoleapplication2\consoleapplication2\consoleapplication2.cpp(136): warning C4101: 'mult': unreferenced local variable
+  ConsoleApplication2.vcxproj -> D:\Faculty\An3\Semestrul 2\Structure of Computer Systems\scs lab 1\ConsoleApplication2\Debug\ConsoleApplication2.exe
