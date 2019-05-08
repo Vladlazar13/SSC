@@ -1,4 +1,4 @@
-// Integer Matrix Multiplication.cpp : This file contains the 'main' function. Program execution begins and ends there.
+// Integer Matrix Multiplication.cpp : This cout contains the 'main' function. Program execution begins and ends there.
 //
 
 #include "pch.h"
@@ -25,7 +25,7 @@ void PrintMatrix(int **arr, int dim);
 
 int **MatrixMultiply(int **A, int **B, int n);
 
-int dim = 1000;
+int dim = 500;
 
 int test;
 int nr_tests = 10;
@@ -33,7 +33,7 @@ int nr_tests = 10;
 int min_elem = 1000000000;
 int max_elem = INT_MAX;
 
-ofstream file;
+//ofstream cout;
 
 default_random_engine gen;
 uniform_int_distribution<int> d(min_elem, max_elem);
@@ -45,17 +45,17 @@ int main(void)
 
 	// Some computation here
 	
-	file.open("integer-operations-multiple-divisions-test.txt");
+	/*cout.open("integer-operations-multiple-divisions-test.txt");*/
 
 	int i = 0;
 	int j = 0;
 
-	file << "INTEGER OPERATIONS TESTING " << endl;
+	cout << "INTEGER OPERATIONS TESTING " << endl;
 
-	file << "Min element: " << min_elem << "  Max element: " << max_elem << endl << endl;
+	cout << "Min element: " << min_elem << "  Max element: " << max_elem << endl << endl;
 
-	for (int dimension = 500; dimension <= dim; dimension += 100) {
-		file << "DIMENSION: " << dimension << endl << endl;
+	for (int dimension = 100; dimension <= dim; dimension += 100) {
+		cout << "DIMENSION: " << dimension << endl << endl;
 
 		for (test = 1; test <= nr_tests; test++) {
 
@@ -73,11 +73,11 @@ int main(void)
 			DeallocateMatrix(C, dimension);
 		}
 
-		file << endl << endl << endl;
+		cout << endl << endl << endl;
 	}
 
-	file.close();
-	
+	/*cout.close();
+	*/
 	return (0);
 }
 
@@ -106,9 +106,9 @@ int **MatrixMultiply(int **A, int **B, int dim)
 			sum = 0;
 			for (k = 0; k < dim; k++)
 			{
-				sum += A[i][k] * B[k][j] / DIVISION_FACTOR;
+				sum += A[i][k] * B[k][j] ;
 			}
-			C[i][j] = sum;
+			C[i][j] = sum / DIVISION_FACTOR;
 
 		}
 	}
@@ -119,11 +119,11 @@ int **MatrixMultiply(int **A, int **B, int dim)
 
 	auto dur = std::chrono::duration_cast<std::chrono::microseconds>(end - beg);
 
-	//file <<  "Total time " << (1.0 * dur.count())  << " seconds" << endl;
+	//cout <<  "Total time " << (1.0 * dur.count())  << " seconds" << endl;
 
 	double elapsed_time = MICROS_TO_SECONDS * dur.count();
 
-	file << "Dimension " << dim << " Test: " << test << " Total seconds : " << elapsed_time << endl;
+	cout << "Dimension " << dim << " Test: " << test << " Total seconds : " << elapsed_time << endl;
 
 	return(C);
 }
@@ -133,12 +133,12 @@ void PrintMatrix(int **arr, int dim)
 	int i, j;
 	for (i = 0; i < dim; i++)
 	{
-		file << "[ ";
+		cout << "[ ";
 		for (j = 0; j < dim; j++)
 		{
 			printf("%5d ", arr[i][j]);
 		}
-		file << "]\n";
+		cout << "]\n";
 	}
 }
 

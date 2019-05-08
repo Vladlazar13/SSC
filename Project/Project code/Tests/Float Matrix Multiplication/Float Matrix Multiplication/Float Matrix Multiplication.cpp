@@ -1,4 +1,4 @@
-// Integer Matrix Multiplication.cpp : This file contains the 'main' function. Program execution begins and ends there.
+// Integer Matrix Multiplication.cpp : This cout contains the 'main' function. Program execution begins and ends there.
 //
 
 #include "pch.h"
@@ -27,7 +27,7 @@ void PrintMatrix(float **arr, int dim);
 
 float **MatrixMultiply(float **A, float **B, int n);
 
-int dim = 1000;
+int dim = 500;
 
 int test;
 int nr_tests = 10;
@@ -35,7 +35,7 @@ int nr_tests = 10;
 float min_elem = FLT_MIN;
 float max_elem = FLT_MAX;
 
-ofstream file;
+//ofstream cout;
 
 default_random_engine gen;
 uniform_real_distribution<float> d(min_elem, max_elem);
@@ -44,30 +44,30 @@ int main(void)
 {
 
 
-	file.open("float-operations-multiple-divisions-test.txt");
+	//cout.open("float-operations-multiple-divisions-test.txt");
 
 	int i = 0;
 	int j = 0;
 
-	file << "Min element: " << min_elem << "  Max element: " << max_elem << endl << endl;
+	cout << "Min element: " << min_elem << "  Max element: " << max_elem << endl << endl;
 
 	for (int dimension = 500; dimension <= dim; dimension += 100) {
-		file << "DIMENSION: " << dimension << endl << endl;
+		cout << "DIMENSION: " << dimension << endl << endl;
 
 		for (test = 1; test <= nr_tests; test++) {
 
 			float **A = AllocateMatrix(dimension);
-			//file << "A: " << endl;
+			//cout << "A: " << endl;
 			//PrintMatrix(A, dimension);
 
 			float **B = AllocateMatrix(dimension);
-			//file << "B: " << endl;
+			//cout << "B: " << endl;
 			//PrintMatrix(B, dimension);
 
 
 			
 			float **C = MatrixMultiply(A, B, dimension);
-			//file << "C: " << endl;
+			//cout << "C: " << endl;
 			//PrintMatrix(C, dimension);
 
 			DeallocateMatrix(A, dimension);
@@ -75,10 +75,10 @@ int main(void)
 			DeallocateMatrix(C, dimension);
 		}
 
-		file << endl << endl << endl;
+		cout << endl << endl << endl;
 	}
 
-	file.close();
+	//cout.close();
 
 	return (0);
 }
@@ -108,9 +108,9 @@ float **MatrixMultiply(float **A, float **B, int dim)
 			sum = 0;
 			for (k = 0; k < dim; k++)
 			{
-				sum += A[i][k] * B[k][j] / M_PI ;
+				sum += A[i][k] * B[k][j]  ;
 			}
-			C[i][j] = sum ;
+			C[i][j] = sum / M_PI;
 
 		}
 	}
@@ -121,11 +121,11 @@ float **MatrixMultiply(float **A, float **B, int dim)
 
 	auto dur = std::chrono::duration_cast<std::chrono::microseconds>(end - beg);
 
-	//file <<  "Total time " << (1.0 * dur.count())  << " seconds" << endl;
+	//cout <<  "Total time " << (1.0 * dur.count())  << " seconds" << endl;
 
 	double elapsed_time = MICROS_TO_SECONDS * dur.count();
 
-	file << "Dimension " << dim << " Test: " << test << " Total seconds : " << elapsed_time << endl;
+	cout << "Dimension " << dim << " Test: " << test << " Total seconds : " << elapsed_time << endl;
 
 	return(C);
 }
@@ -135,15 +135,15 @@ void PrintMatrix(float **arr, int dim)
 	int i, j;
 	for (i = 0; i < dim; i++)
 	{
-		file << "[ ";
+		cout << "[ ";
 		for (j = 0; j < dim; j++)
 		{
 			printf("%f  ", arr[i][j]);
 		}
-		file << "]\n";
+		cout << "]\n";
 	}
 
-	file << endl << endl;
+	cout << endl << endl;
 }
 
 void DeallocateMatrix(float **arr, int dim) {
